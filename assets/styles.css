@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    color: #111827;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+
+.theme-toggle img {
+    fill: #000000;
+}
+
+.theme-toggle img:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.introduction {
+    max-width: 60rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #d1d5db;
+    border-bottom: 1px solid #d1d5db;
+    padding: 2rem 0;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    border-top: 1px solid #d1d5db;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+}
+
+a {
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+    padding: 1rem;
+    margin-top: auto;
+}
+
+.links-section {
+    display: inline-block;
+    align-items: center;
+    gap: 0.5rem;
+    border-top: 1px solid #d1d5db;
+    padding-top: 2rem;
+}
+
+.links-section a {
+    color: #111827;
+}
+
+.links-section img {
+    fill: #000000;
+}
+
+.links-section a:hover img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+}
+
+/* Dark mode styles */
+.dark body {
+    background-color: #1a1a1a;
+    color: #e5e7eb;
+}
+
+.dark .introduction {
+    border-color: #2d2d2d;
+}
+
+.dark h1::after {
+    border-top-color: #2d2d2d;
+}
+
+.dark a {
+    color: #e5e7eb;
+}
+
+.dark footer {
+    color: #6b7280;
+    border-color: #2d2d2d;
+}
+
+.dark .links-section {
+    border-color: #2d2d2d;
+}
+
+.dark .links-section img {
+    filter: invert(1);
+}
+
+.dark .links-section a:hover img {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+}
+
+.dark .theme-toggle img {
+    filter: invert(1);
+}
+
+.dark .theme-toggle img:hover {
+    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+}
