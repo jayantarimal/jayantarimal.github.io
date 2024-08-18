@@ -27,8 +27,10 @@ header {
     fill: #000000;
 }
 
-.theme-toggle img:hover {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+@media (hover: hover) and (pointer: fine) {
+    .theme-toggle img:hover {
+        filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+    }
 }
 
 main {
@@ -45,7 +47,7 @@ main {
     text-align: center;
     border-top: 1px solid #d1d5db;
     border-bottom: 1px solid #d1d5db;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 h1 {
@@ -104,8 +106,10 @@ footer {
     fill: #000000;
 }
 
-.links-section a:hover img {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+@media (hover: hover) and (pointer: fine) {
+    .links-section a:hover img {
+        filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+    }
 }
 
 /* Dark mode styles */
@@ -139,14 +143,19 @@ footer {
     filter: invert(1);
 }
 
-.dark .links-section a:hover img {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+@media (hover: hover) and (pointer: fine) {
+    .dark .links-section a:hover img {
+        filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+    }
 }
+
 
 .dark .theme-toggle img {
     filter: invert(1);
 }
 
-.dark .theme-toggle img:hover {
-    filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+@media (hover: hover) and (pointer: fine) {
+    .dark .theme-toggle img:hover {
+        filter: brightness(0) saturate(100%) invert(41%) sepia(58%) saturate(3782%) hue-rotate(186deg) brightness(105%) contrast(103%);
+    }
 }
